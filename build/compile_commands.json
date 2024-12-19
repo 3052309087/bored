@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Users/30523/Desktop/bored/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe  @CMakeFiles/FunctionManager.dir/includes_C.rsp -g -std=gnu99 -o CMakeFiles\\FunctionManager.dir\\project.c.obj -c C:\\Users\\30523\\Desktop\\bored\\project.c",
+  "file": "C:/Users/30523/Desktop/bored/project.c",
+  "output": "CMakeFiles/FunctionManager.dir/project.c.obj"
+},
+{
+  "directory": "C:/Users/30523/Desktop/bored/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe  @CMakeFiles/FunctionManager.dir/includes_C.rsp -g -std=gnu99 -o CMakeFiles\\FunctionManager.dir\\test.c.obj -c C:\\Users\\30523\\Desktop\\bored\\test.c",
+  "file": "C:/Users/30523/Desktop/bored/test.c",
+  "output": "CMakeFiles/FunctionManager.dir/test.c.obj"
+}
+]

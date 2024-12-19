@@ -1,0 +1,5 @@
+C:/Users/30523/Desktop/bored/build/CMakeFiles/FunctionManager.dir
+C:/Users/30523/Desktop/bored/build/CMakeFiles/package.dir
+C:/Users/30523/Desktop/bored/build/CMakeFiles/package_source.dir
+C:/Users/30523/Desktop/bored/build/CMakeFiles/edit_cache.dir
+C:/Users/30523/Desktop/bored/build/CMakeFiles/rebuild_cache.dir
