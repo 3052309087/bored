@@ -13,6 +13,13 @@ void menu()
     printf("6.退出系统\n");
     printf("请选择你要进行的操作：\n");
 }
+void del_all()
+{
+    FILE *tempFile = fopen("function1.txt", "w");
+    remove("function.txt");
+    fclose(tempFile);
+    rename("function1.txt", "function.txt");   
+}
 void del() {
     int id;
     int new_id = 1; // 用于重新分配编号
@@ -74,13 +81,26 @@ void del() {
 }
 void find_id() {
     int id;
-    
+    char a [999] = "\0";
     int found = 0; // 用于标记是否找到函数
     function temp_function; // 临时变量，用于存储当前读取的函数信息
     
-
+    remake:
     printf("请输入要查找的函数编号：\n");
-    scanf("%d", &id);
+    scanf("%s", &a);
+    for (int i = 0; i < 999; i++)
+    {
+        if (a[i] == '\0')
+        {
+            break;
+        }
+        if (num(&a[i]) == 1)
+        {
+            printf("输入错误，请重新输入\n");
+            goto remake;
+        }
+    }
+    id = atoi(a);//处理非法输入
     
 
     FILE *file = fopen("function.txt", "r");
@@ -220,16 +240,26 @@ void add()
 void id_revise() 
 {
     int id;
-    
+    char a [999] = "\0";
     int found = 0; // 0_未找到匹配记录，1_找到匹配记录
     function temp_function; // 临时变量
   
-
+    remake:
     printf("请输入要修改的函数编号：\n");
-    scanf("%d", &id);
-
-    
-
+    scanf("%s", &a);
+    for (int i = 0; i < 999; i++)
+    {
+        if (a[i] == '\0')
+        {
+            break;
+        }
+        if (num(&a[i]) == 1)
+        {
+            printf("输入错误，请重新输入\n");
+            goto remake;
+        }
+    }
+    id = atoi(a);//处理非法输入
 
     FILE *file = fopen("function.txt", "r");
     FILE *tempFile = fopen("function1.txt", "w");

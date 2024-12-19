@@ -1,0 +1,3 @@
+[proc] 命令“"C:\Program Files\CMake\bin\cmake.EXE" --build "C:/Users/30523/Desktop/bored/out/build/GCC 13.2.0 x86_64-w64-mingw32 (ucrt64)" --parallel 22 --target FunctionManager --”已退出，代码为 2
+[driver] 生成完毕: 00:00:00.451
+[build] 生成已完成，退出代码为 2

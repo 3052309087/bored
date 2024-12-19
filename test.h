@@ -15,6 +15,7 @@ void id_revise();
 void name_revise();
 void display();
 void del();
+void del_all();
 void find_id();
 int num(char *str);
 void find_prototype();
