@@ -1,5 +1,5 @@
 # CMake minimum version requirement
-cmake_minimum_required(VERSION 3.31.2)
+cmake_minimum_required(VERSION 3.31.1)
 
 # Project name
 project(FunctionManager)

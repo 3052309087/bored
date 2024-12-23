@@ -25,16 +25,34 @@ void del() {
     int new_id = 1; // 用于重新分配编号
     int found = 0;  // 标记是否找到要删除的记录
     function temp_function; // 用于存储当前读取的函数信息
+    char a [999] = "\0";
+
+    remake:
     printf("请输入要删除的函数编号：\n");
-    scanf("%d", &id);
+    scanf("%s", &a);
+    for (int i = 0; i < 999; i++)
+    {
+        if (a[i] == '\0')
+        {
+            break;
+        }
+        if (num(&a[i]) == 1)
+        {
+            printf("输入错误，请重新输入\n");
+            goto remake;
+        }
+    }
+    id = atoi(a);//处理非法输入
+
+
 
     FILE *file = fopen("function.txt", "r");
     FILE *tempFile = fopen("function1.txt", "w");
 
     if (file == NULL || tempFile == NULL) {
         printf("无法打开文件\n");
-        if (file) fclose(file);
-        if (tempFile) fclose(tempFile);
+        if (file != NULL) fclose(file);
+        if (tempFile != NULL) fclose(tempFile);
         return;
     }
 
@@ -178,7 +196,7 @@ void find_prototype() {
     fclose(file);
 
     // 如果未找到任何匹配的记录
-    if (!found) {
+    if (found == 0) {
         printf("未找到包含 \"%s\" 的函数原型。\n", prototype);
     }
 }
@@ -209,7 +227,7 @@ void add()
         
     }
      }
-    int fclose(FILE *file1);
+    fclose(file1);
     count++;
 
    
@@ -234,7 +252,7 @@ void add()
     fprintf(file, "%d %s %s %s %s %s\n", Function[count].id,Function[count].easy_name, Function[count].name, Function[count].function, Function[count].my_return, Function[count].illustrate);
     fclose(file);
     printf("函数信息已保存到文件。\n");
-    int fclose(FILE *file);
+    fclose(file);
     
 }
 void id_revise() 
@@ -266,8 +284,8 @@ void id_revise()
 
     if (file == NULL || tempFile == NULL) {
         printf("无法打开文件\n");
-        if (file) fclose(file);
-        if (tempFile) fclose(tempFile);
+        if (file !=NULL) fclose(file);
+        if (tempFile !=NULL) fclose(tempFile);
         return;
     }
 
@@ -407,8 +425,8 @@ void name_revise() {
 
     if (file == NULL || tempFile == NULL) {
         printf("无法打开文件\n");
-        if (file) fclose(file);
-        if (tempFile) fclose(tempFile);
+        if (file !=NULL) fclose(file);
+        if (tempFile !=NULL) fclose(tempFile);
         return;
     }
 

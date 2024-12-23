@@ -40,10 +40,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows.cmake"
   "C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/WindowsPaths.cmake"
   "C:/Users/30523/Desktop/bored/CMakeLists.txt"
-  "CMakeFiles/3.31.2/CMakeCCompiler.cmake"
-  "CMakeFiles/3.31.2/CMakeCXXCompiler.cmake"
-  "CMakeFiles/3.31.2/CMakeRCCompiler.cmake"
-  "CMakeFiles/3.31.2/CMakeSystem.cmake"
+  "CMakeFiles/3.31.1/CMakeCCompiler.cmake"
+  "CMakeFiles/3.31.1/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.31.1/CMakeRCCompiler.cmake"
+  "CMakeFiles/3.31.1/CMakeSystem.cmake"
   )
 
 # The corresponding makefile is:

@@ -1,3 +1,25 @@
-[proc] 命令“"C:\Program Files\CMake\bin\cmake.EXE" --build "C:/Users/30523/Desktop/bored/out/build/GCC 13.2.0 x86_64-w64-mingw32 (ucrt64)" --parallel 22 --target FunctionManager --”已退出，代码为 2
-[driver] 生成完毕: 00:00:00.451
-[build] 生成已完成，退出代码为 2
+1 printf int_printf(const_char*_format,...) Outputs_formatted_text_to_standard_output integer Indicates_number_of_characters_written
+2 scanf int_scanf(const_char*_format,...) Reads_formatted_input_from_standard_input integer Indicates_number_of_items_read
+3 strlen size_t_strlen(const_char*_str) Computes_the_length_of_a_string size_t Number_of_characters_in_the_string
+4 strcpy char*_strcpy(char*_dest,const_char*_src) Copies_a_string_to_another char* Pointer_to_the_destination_string
+5 strcmp int_strcmp(const_char*_str1,const_char*_str2) Compares_two_strings integer Zero_if_strings_are_equal,_non-zero_otherwise
+6 malloc void*_malloc(size_t_size) Allocates_memory_on_the_heap void* Pointer_to_allocated_memory_block
+7 free void_free(void*_ptr) Frees_allocated_memory void No_return_value
+8 fopen FILE*_fopen(const_char*_filename,const_char*_mode) Opens_a_file FILE* Pointer_to_file_stream
+9 fclose int_fclose(FILE*_stream) Closes_a_file integer Zero_on_success,_EOF_on_error
+10 fgets char*_fgets(char*_str,int_num,FILE*_stream) Reads_a_string_from_a_file char* Pointer_to_the_string_read
+11 strncpy char*_strncpy(char*_dest,const_char*_src,size_t_n) Copies_a_string_up_to_n_characters char* Pointer_to_the_destination_string
+12 strcat char*_strcat(char*_dest,const_char*_src) Concatenates_two_strings char* Pointer_to_the_destination_string
+13 strchr char*_strchr(const_char*_str,int_char) Locates_a_character_in_a_string char* Pointer_to_the_character_or_NULL
+14 strtok char*_strtok(char*_str,const_char*_delim) Splits_a_string_into_tokens char* Pointer_to_the_next_token_or_NULL
+15 sprintf int_sprintf(char*_str,const_char*_format,...) Formats_and_stores_a_string integer Number_of_characters_written
+16 fprintf int_fprintf(FILE*_stream,const_char*_format,...) Outputs_formatted_text_to_a_file integer Number_of_characters_written
+17 atoi int_atoi(const_char*_str) Converts_a_string_to_an_integer integer Converted_integer_value
+18 atof double_atof(const_char*_str) Converts_a_string_to_a_double double Converted_double_value
+19 system int_system(const_char*_command) Executes_a_system_command integer System_specific_return_code
+20 exit void_exit(int_status) Terminates_program_execution void No_return_value
+21 time time_t_time(time_t*_timer) Gets_the_current_time time_t Current_time_in_seconds_since_epoch
+22 clock clock_t_clock(void) Gets_processor_time_used clock_t Processor_time_used_in_clocks
+23 rand int_rand(void) Generates_a_random_number integer Pseudo-random_number
+24 srand void_srand(unsigned_int_seed) Seeds_the_random_number_generator void No_return_value
+25 abs int_abs(int_value) Computes_the_absolute_value integer Absolute_value_of_the_integer
